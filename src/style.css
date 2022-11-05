@@ -96,13 +96,27 @@ footer {
 
 /* Contact Form Start */
 .contact-form {
-    text-align: center;
     max-width: 700px;
-    margin: 100px auto 50px auto;
-    box-shadow: 0 0 20px black;
+    margin: 20px auto 50px auto;
     box-sizing: border-box;
     padding: 40px;
     border-radius: 12px;
+}
+
+.contact-form > h3{
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.contact-form > h4 {
+    font-family: Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+.form--name,.form--email,.form--message, .contact-form > label {
+    font-family: 'Segoe UI';
+    font-weight: 700;
 }
 
 input, textarea {
@@ -116,44 +130,44 @@ input, textarea {
     outline: none;
 }
 
-.form--name > input{
-    width: 48%;
-    float: left;
-    margin-right: 4%;
+@media screen and (min-width: 650px) {
+    /* .form--name {
+        display: inline;
+    } */
+
+    .form--name > .first_name, .last_name {
+        width: 48%;
+        margin-right: 2%;
+        display: inline-block;
+    }
+
+    .form--name > input:last-child {
+        margin-right: 0;
+    }
 }
 
-.form--name > input:last-child {
-    margin-right: 0;
-}
 
 textarea {
     height: 125px;
 }
 
-.form--name > input:focus, .form--email > input:focus,
-textarea:focus {
-    border: 2px solid black;
+.form--btn {
+    text-align: center;
 }
 
-#btn_submit {
-    width: 250px;
-    background: #4CAF50;
+#btn__submit {
+    width: 100%;
+    background-color: rgb(56, 56, 250);
+    color: white;
     height: 60px;
     line-height: 47px;
     border-radius: 10px;
     font-weight: bolder;
     font-size: larger;
     border: none;
-    box-shadow: 0 9px #999;
 }
 
-#btn_submit:hover {
-    background-color: #3e8e41;
+#btn__submit:hover {
+    background-color: rgb(19, 19, 247);
 }
-
-#btn_submit:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
 /* Contact Form End */

@@ -23,7 +23,7 @@ export default function Links() {
                 </div>
             </a>
             <a href="https://books.zuri.team/design-rules" id="book_design">Design Books</a>
-            <a href="#" id="contact">Contact Me</a>
+            <a href="contact" id="contact">Contact Me</a>
         </div>
     )
 }
